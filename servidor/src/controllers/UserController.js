@@ -1,6 +1,6 @@
 const axios = require('axios');
 const User = require('../models/user');
-const parseStringAsArray = require('../utils/parseStringAsArray');
+//const parseStringAsArray = require('../utils/parseStringAsArray');
 
 module.exports = { 
     //Listar usuários existentes
@@ -12,7 +12,7 @@ module.exports = {
 
     //Cadastra novos usuários
     async store(request, response) {
-        const { name, emai, cell } = request.body;
+        const { name, email, cell } = request.body;
 
         let user = await User.findOne({ email });
 
@@ -24,9 +24,7 @@ module.exports = {
             //const techsArray =  parseStringAsArray(techs);
             
              user = await User.create({
-                id,
                 name,
-                avatarUrl,
                 email,
                 cell,
             })
