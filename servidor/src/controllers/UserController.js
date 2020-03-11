@@ -12,12 +12,12 @@ module.exports = {
 
     //Cadastra novos usuários
     async store(request, response) {
-        const { email } = request.body;
+        const { name, email, cell } = request.body;
 
         let user = await User.findOne({ email });
 
         if (!user){
-            //const apiResponse = await axios.get(`https://api.github.com/users/${email}`);
+            //const apiResponse = await axios.get(`http://localhost:4000/users/${email}`);
 
             //const { name = login, avatar_url } = apiResponse.data;
 
@@ -25,7 +25,7 @@ module.exports = {
             
              user = await User.create({
                 name,
-                avatarUrl,
+                //avatarUrl,
                 email,
                 cell,
             })
