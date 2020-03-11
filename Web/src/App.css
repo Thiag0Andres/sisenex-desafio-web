@@ -8,9 +8,16 @@
     align-items: flex-start;
 }
 
+#app aside {
+    margin-top: 100px;
+}
+
 #app main {
+    margin-top: 100px;
     margin-left: 30px;
 }
+
+
 
 @media (max-width: 683px) {
     #app {

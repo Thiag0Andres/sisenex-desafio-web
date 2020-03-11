@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 
-import './styles.css';
-
 function UserForm({ onSubmit }) { 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [cell, setCell] = useState('');
+    const [avatarUrl, setAvatarUrl] = useState('');
 
     async function handleSubimit(e) {
         e.preventDefault();
@@ -14,11 +13,13 @@ function UserForm({ onSubmit }) {
             name,
             email,
             cell,
+            avatarUrl,
         });
         
         setName('');
         setEmail('');
         setCell('');
+        setAvatarUrl('');
     }
 
     return (
@@ -53,6 +54,17 @@ function UserForm({ onSubmit }) {
                 required
                 value={cell}
                 onChange={e => setCell(e.target.value)}
+            />
+          </div>
+
+          <div class="input-block">
+            <label htmlFor="avatarUrl">Url da img</label>
+            <input 
+                name="avatarUrl"
+                id="avatarUrl"
+                required
+                value={avatarUrl}
+                onChange={e => setAvatarUrl(e.target.value)}
             />
           </div>
 

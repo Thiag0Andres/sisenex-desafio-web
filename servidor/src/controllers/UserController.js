@@ -12,7 +12,7 @@ module.exports = {
 
     //Cadastra novos usuários
     async store(request, response) {
-        const { name, email, cell } = request.body;
+        const { name, email, cell, avatarUrl } = request.body;
 
         let user = await User.findOne({ email });
 
@@ -24,8 +24,9 @@ module.exports = {
             //const techsArray =  parseStringAsArray(techs);
             
              user = await User.create({
+                id,
                 name,
-                //avatarUrl,
+                avatarUrl,
                 email,
                 cell,
             })

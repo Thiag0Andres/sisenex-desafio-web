@@ -1,0 +1,31 @@
+div {
+    flex: 1;
+}
+
+div form {
+    float: left;
+    width: 100%;
+    padding: 0;
+}
+
+.search-box {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 350px;
+    transform:  translate(-50% -50%);
+    height: 90px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+.formBusca {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+}
+
+    

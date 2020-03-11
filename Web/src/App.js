@@ -5,6 +5,7 @@ import './global.css';
 import './App.css';
 import './Sidebar.css';
 import './Main.css';
+import './Searchbar.css';
 
 import UserForm from './components/UserForm';
 import UserItem from './components/UserItem';
@@ -34,6 +35,15 @@ function App() {
         <strong>Cadastrar</strong>
         <UserForm onSubmit={handleAddUser}/>
       </aside>
+
+      <script src="https://kit.fontawesome.com/60361a3b83.js" crossorigin="anonymous"></script>
+
+      <div className="search-box">
+        <form name="formBusca" id="formBusca" method="post">
+          <input type="text" name="Busca" id="Busca" placeholder="Busque por um usuário"/>
+              <i className="fas fa-search"></i>
+        </form>
+      </div>
       
       <main>
         <ul>
