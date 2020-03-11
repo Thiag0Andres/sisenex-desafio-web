@@ -22,7 +22,7 @@ function App() {
     loadUsers();
   }, []);
 
-  async function handleAddDev(data) {
+  async function handleAddUser(data) {
     const response = await api.post('/users', data)
 
     setUsers([...users, response.data]);
@@ -32,7 +32,7 @@ function App() {
     <div id ="app">
       <aside>
         <strong>Cadastrar</strong>
-        <UserForm onSubmit={handleAddDev}/>
+        <UserForm onSubmit={handleAddUser}/>
       </aside>
       
       <main>
