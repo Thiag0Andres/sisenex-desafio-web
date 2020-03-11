@@ -36,12 +36,11 @@ function App() {
         <UserForm onSubmit={handleAddUser}/>
       </aside>
 
-      <script src="https://kit.fontawesome.com/60361a3b83.js" crossorigin="anonymous"></script>
-
+      
       <div className="search-box">
         <form name="formBusca" id="formBusca" method="post">
-          <input type="text" name="Busca" id="Busca" placeholder="Busque por um usuário"/>
-              <i className="fas fa-search"></i>
+          <input type="text" name="Busca" id="Busca" placeholder="Buscar por usuário"/>
+          <i className="fas fa-search"></i>
         </form>
       </div>
       

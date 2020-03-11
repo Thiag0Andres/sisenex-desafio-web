@@ -2,30 +2,38 @@ div {
     flex: 1;
 }
 
-div form {
-    float: left;
-    width: 100%;
-    padding: 0;
-}
-
-.search-box {
+div .search-box {
+    width: 850px;
     position: absolute;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 350px;
-    transform:  translate(-50% -50%);
-    height: 90px;
-    border-radius: 40px;
-    padding: 10px;
+    height: 40px;
+    border-radius: 50px;
+    padding: 0;
+    background: #6931ca;
 
 }
-.formBusca {
-    border: none;
+
+div form .search-box {
+    width:  100%;
+    height: 32px;
+    font-size: 14px;
+    color: black;
+    border: 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+div form input[type="text"] {
+    margin-left: 20px;
     background: none;
     outline: none;
+    width: 800px;
     float: left;
     padding: 0;
-    color: white;
+    color: black;
     font-size: 16px;
+    margin-top: 10px;
+    border:0;
 }
 
     
