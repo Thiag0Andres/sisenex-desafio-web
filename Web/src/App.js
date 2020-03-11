@@ -7,13 +7,9 @@ import './Sidebar.css';
 import './Main.css';
 
 function App() {
-
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [cell, setCell] = useState('');
-
-  useEffect(() => {
-  }, []);
 
   async function handleAddDev(e) {
      e.preventDefault();
