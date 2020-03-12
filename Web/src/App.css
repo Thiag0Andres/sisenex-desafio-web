@@ -17,8 +17,6 @@
     margin-left: 30px;
 }
 
-
-
 @media (max-width: 683px) {
     #app {
         flex-direction: column;
@@ -33,4 +31,3 @@
         width: 100%;
     }
 }
-

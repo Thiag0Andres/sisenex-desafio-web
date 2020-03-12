@@ -8,7 +8,7 @@ import './Main.css';
 import './Searchbar.css';
 
 import UserForm from './components/UserForm';
-import UserItem from './components/UserItem';
+import UserItem from './components/UserItem'
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -17,7 +17,8 @@ function App() {
     async function loadUsers() {
       const response = await api.get('/users');
 
-      setUsers(response.data);
+      setUsers(response.data);  
+
     }
 
     loadUsers();
@@ -36,14 +37,17 @@ function App() {
         <UserForm onSubmit={handleAddUser}/>
       </aside>
 
-      
       <div className="search-box">
-        <form name="formBusca" id="formBusca" method="post">
-          <input type="text" name="Busca" id="Busca" placeholder="Buscar por usuário"/>
-          <i className="fas fa-search"></i>
-        </form>
-      </div>
-      
+            <form name="formBusca" id="formBusca" method="post">
+            <input type="text"
+                    name="Busca"
+                    id="Busca"
+                    autoCorrect={false}
+                    placeholder="Buscar por usuário"/>
+            <i className="fas fa-search"></i>
+            </form>
+        </div>
+
       <main>
         <ul>
           {users.map(user =>(
