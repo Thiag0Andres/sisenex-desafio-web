@@ -1,0 +1,49 @@
+/* Configurações do box de itens */
+li.user-item {
+    background: #ffffff;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
+    border-radius: 2px;
+    padding: 20px;
+}
+
+/* Configurações do box */
+li.user-item header{
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* Configurações da imagem */
+li.user-item header img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}
+
+/* Configurações das informações */
+li.user-item header .user-info {
+    margin-left: 20px;
+}
+
+/* Configurações do nome */
+.user-info strong {
+    display: block;
+    font-size: 16px;
+    color: #333333;
+}
+
+/* Configurações do número */
+.user-info span {
+    font-size: 13px;
+    color: #999999;
+    margin-top: 2px;
+}
+
+li.user-item p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 5px 0;
+    margin-left: 70px;
+}
+
