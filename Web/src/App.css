@@ -23,11 +23,15 @@
     }
 
     #app main {
-        margin-left: 0;
+        margin-left: 10px;
         margin-top: 30px;
     }
 
     #app aside {
         width: 100%;
+    }
+
+    #app div {
+        margin-left: 0;
     }
 }

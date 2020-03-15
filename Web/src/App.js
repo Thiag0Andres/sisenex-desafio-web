@@ -37,7 +37,7 @@ function App() {
         <UserForm onSubmit={handleAddUser}/>
       </aside>
 
-      <div className="search-box">
+      <div className="search-bar">
             <form name="formBusca" id="formBusca" method="post">
             <input type="text"
                     name="Busca"
