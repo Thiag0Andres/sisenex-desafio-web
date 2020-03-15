@@ -21,7 +21,7 @@ div .search-bar {
     }
 }
 
-/*texto search bar*/
+/*Texto dentro da search bar*/
 div form input[type="text"] {
     margin-left: 20px;
     margin-top: 10px;
@@ -44,7 +44,7 @@ div form i {
     margin-top: 10px;
 }
 
-/*Frase dentro da search bar*/
+/*Texto da search bar*/
 ::-webkit-input-placeholder {
    color: white;
    font: 16px verdana, arial, sans-serif;
